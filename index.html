@@ -20,6 +20,24 @@
 </head>
 
 <body>
+  <div class="container">
+    <div class="d-flex justify-content-center">
+      <div class="p-2 pt-1 pb-1"><a href="https://fossee.in" target="_blank"><img src="image/FOSSEE_logo.png"
+            class="img-fluid" alt="FOSSEE" style="width:100px;height:40px;"></a></div>
+      <div class=" p-2 pt-1 pb-1 "><a href="https://iitb.ac.in" target="_blank"><img src="image/iitb-logo.png"
+            class="img-fluid" alt="FOSSEE" style="width:80px;height:40px;"></a></div>
+      <div class=" p-2 pt-1 pb-1"> <a href="https://mhrd.gov.in/ict-initiatives" target="_blank"
+          rel="noopener noreferrer"><img src="image/mhrd.png" class="img-fluid" alt="MHRD"
+            style="width:100px;height:40px;"> </a></div>
+    </div>
+  </div>
+  <div class="icon-bar">
+    <a href="#" class="facebook text-white"><i class="fab fa-facebook-square"></i></a>
+    <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+    <a href="#" class="twitter"><i class="fab fa-twitter-square"></i></a>
+    <a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a>
+  </div>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
   <nav class="navbar navbar-expand-lg site-header sticky-top py-1">
     <a class="navbar-brand" href="#"><span class="navbar-toggler-icon"></span></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -36,19 +54,19 @@
           <a class="nav-link" href="#">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Registration</a>
+          <a class="nav-link" href="#register">Registration</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Partners and Organisers</a>
+          <a class="nav-link" href="#partners-and-organisers">Partners and Organisers</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Rewards</a>
+          <a class="nav-link" href="#rewards">Rewards</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Rules and Reagulations</a>
+          <a class="nav-link" href="#rules-and-regulations">Rules and Regulations</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact us</a>
+          <a class="nav-link" href="#contact-us">Contact us</a>
         </li>
       </ul>
     </div>
@@ -57,11 +75,21 @@
 
   <section id="front">
     <div class="front-container wow fadeIn">
-      <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center">
-        <div class="col-md-12 p-lg-5 mx-auto my-5">
-          <h1 class="mb-4 pb-0">Scilab <span>Toolbox</span><br> Hackathon</h1>
+      <div class="position-relative overflow-hidden p-0 text-center">
+        <div class="col-md-12 p-lg-0 mx-auto my-5 ">
           <p class="mb-4 pb-0"></p>
-          <a href="#about" class="about-btn scrollto">Register</a>
+          <h3 class="text-white pt-0 float-left" style="font-family:Fira Sans; font-size:30pt"> A global challenge for
+            bright minds </h3><br><br>
+          <h6 class="text-white float-left text-left ml-5"
+            style="font-family:Fira Sans Extra Condensed; font-size:13pt">An initiative Of the FOSSEE Project,
+            <br>
+            Indian Institute of Technology Bombay, India</h6>
+          </p>
+          <br><br><br>
+          <h1 class="mb-4 mt-5 pb-3 text-capitalize font-weight-bold"
+            style="font-family:Fira Sans Extra Condensed; font-size:50pt">Scilab
+            <span>Toolbox</span><br> Hackathon</h1>
+          <a href="#register" class="about-btn scrollto">Register</a>
         </div>
       </div>
     </div>
@@ -73,8 +101,8 @@
         <div class="my-3 py-3">
           <h2 class="display-5">Important Dates</h2>
         </div>
-        <div class="bg-light box-shadow mx-auto"
-          style="width: 80%; height: 300px; color: #f82249; border-radius: 21px 21px 21px 21px;">
+        <div class="bg-light box-shadow mx-auto text-justify px-3"
+          style="width: 100%; height: 300px; color: #f82249; border-radius: 21px 21px 21px 21px;">
           <br>
           <p><span style="font-weight: 400;">Registration starts on : 24 May 2020</span></p>
           <p><span style="font-weight: 400;">Registration last date: 8 June 2020</span></p>
@@ -92,8 +120,11 @@
         </div>
 
         <div class="bg-light box-shadow mx-auto"
-          style="width: 80%; height: 300px;color: #f82249;  border-radius: 21px 21px 21px 21px;">
-          <a href="https://scilab.in" target="_blank"><img src="image/registration.png" style="height:100%;"></a>
+          style="width: 100%; height: 300px;color: #f82249;  border-radius: 21px 21px 21px 21px;">
+          <img src="image/registration.png" class="img-fluid" alt="QRcode" style="height:80%;">
+          <h6 class="display-5"><a
+              href="https://docs.google.com/forms/d/e/1FAIpQLScuZvyCwQryxAMWFHRVnzA0IyzubKDiFO9Lf0eObMafzm6mSA/viewform"
+              target="_blank">Scan QR code or click here to register</a> </h6>
         </div>
       </div>
     </section>
@@ -105,7 +136,8 @@
       <div class="my-3 py-3">
         <h2 class="display-5">What is Scilab Toolbox Hackathon?</h2>
       </div>
-      <div class="bg-light box-shadow mx-auto bd-highlight" style="border-radius: 21px 21px 21px 21px;">
+      <div class="bg-light box-shadow mx-auto bd-highlight text-justify px-3"
+        style="border-radius: 21px 21px 21px 21px;">
         Scilab Toolbox Hackathon is a non-stop “Scilab toolbox development” competition initiated by the FOSSEE, IIT
         Bombay. Scilab Toolbox Hackathon aims at inspiring young minds to build unique problem-specific toolboxes for
         the proposed ideas or even open-ended real-life problem(s).
@@ -122,7 +154,7 @@
         <h2 class="display-5">Who can participate?</h2>
         <p class="lead"></p>
       </div>
-      <div class="bg-white box-shadow mx-auto" style="border-radius: 21px 21px 21px 21px;">
+      <div class="bg-white box-shadow mx-auto text-justify px-3" style="border-radius: 21px 21px 21px 21px;">
         Anyone who is well acquainted with the functional aspects of Scilab and Xcos or similar numerical computation
         software can participate in this hackathon. In this challenge, we invite the participation of students, faculty,
         research scholars, Scilab experts, professionals, etc, across the globe.
@@ -142,12 +174,14 @@
       </div>
       <div class="bg-dark box-shadow mx-auto" style="border-radius: 21px 21px 21px 21px;"></div>
     </div>
-    <div class="bg-primary mr-md-3 pt-3 pb-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
-      <div class="my-3 py-3">
-        <h2 class="display-5">Rewards</h2>
+    <section id="rewards">
+      <div class="bg-primary mr-md-3 pt-3 pb-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+        <div class="my-3 py-3">
+          <h2 class="display-5">Rewards</h2>
+        </div>
+        <div class="bg-light box-shadow mx-auto" style="border-radius: 21px 21px 21px 21px;"></div>
       </div>
-      <div class="bg-light box-shadow mx-auto" style="border-radius: 21px 21px 21px 21px;"></div>
-    </div>
+    </section>
   </div>
 
 
@@ -175,61 +209,68 @@
       </div>
     </div>
   </div>
-
-  <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-    <div class="bg-light mr-md-3 pt-3 pb-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 py-3">
-        <h2 class="display-5">Partners and Organisers</h2>
-        <p class="lead"></p>
-      </div>
-      <div class="bg-white box-shadow mx-auto" style="border-radius: 21px 21px 21px 21px;">
-        <a href="https://fossee.in" target="_blank"><img src="image/FOSSEE_logo.png" class="img-rounded" alt="FOSSEE"
-            width="200" height="100"></a>
-        <a href="https://mhrd.gov.in/ict-initiatives" target="_blank" rel="noopener noreferrer"><img
-            src="image/mhrd.png" class="img-rounded" alt="MHRD" width="200" height="100"> </a>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-    <div class="bg-light mr-md-3 pt-3 pb-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 py-3">
-        <h2 class="display-5">Rules and Reagulations</h2>
-        <p class="lead"></p>
-      </div>
-      <div class="bg-white box-shadow mx-auto" style="border-radius: 21px 21px 21px 21px;">
-        <ul>
-          <li><span style="font-weight: 400;">The decision of the review committee and organizers in declaring the
-              results will be final.No queries in this regard will be entertained.</span></li>
-          <li><span style="font-weight: 400;">The same person can not participate in more than one team.</span></li>
-          <li><span style="font-weight: 400;">There will be only one point of contact (the team leader) with the
-              organizers.</span></li>
-          <li><span style="font-weight: 400;">Any participant found to be indulging in any form of malpractice will be
-              immediately disqualified.</span></li>
-        </ul>
+  <section id="partners-and-organisers">
+    <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+      <div class="bg-light mr-md-3 pt-3 pb-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 py-3">
+          <h2 class="display-5">Partners and Organisers</h2>
+          <p class="lead"></p>
+        </div>
+        <div class="bg-white box-shadow mx-auto px-3" style="border-radius: 21px 21px 21px 21px;">
+          <div class="container">
+            <div class="d-flex justify-content-center">
+              <div class="p-2 pt-1 pb-1"><a href="https://fossee.in" target="_blank"><img src="image/FOSSEE_logo.png"
+                    class="img-fluid" alt="FOSSEE" style="width:200px;height:60px;"></a></div>
+              <div class=" p-2 pt-1 pb-1 "><a href="https://iitb.ac.in" target="_blank"><img src="image/iitb-logo.png"
+                    class="img-fluid" alt="FOSSEE" style="width:100px;height:60px;"></a></div>
+              <div class=" p-2 pt-1 pb-1"> <a href="https://mhrd.gov.in/ict-initiatives" target="_blank"
+                  rel="noopener noreferrer"><img src="image/mhrd.png" class="img-fluid" alt="MHRD"
+                    style="width:200px;height:60px;"> </a></div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-
-
-  <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-    <div class="bg-light mr-md-3 pt-3 pb-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 py-3">
-        <h2 class="display-5">Contact Us</h2>
-        <p class="lead"></p>
-      </div>
-      <div class="bg-white box-shadow mx-auto" style="border-radius: 21px 21px 21px 21px;">
-        For any queries please email <a href="mailto:contact@scilab.in">contact[at]scilab[dot]in <i
-            class="fas fa-envelope-square"></i></a>
+  </section>
+  <section id="rules-and-regulations">
+    <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+      <div class="bg-light mr-md-3 pt-3 pb-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 py-3">
+          <h2 class="display-5">Rules and Regulations</h2>
+          <p class="lead"></p>
+        </div>
+        <div class="bg-white box-shadow mx-auto text-justify px-3" style="border-radius: 21px 21px 21px 21px;">
+          <ul>
+            <li><span style="font-weight: 400;">The decision of the review committee and organizers in declaring the
+                results will be final. No queries in this regard will be entertained.</span></li>
+            <li><span style="font-weight: 400;">The same person can not participate in more than one team.</span></li>
+            <li><span style="font-weight: 400;">There will be only one point of contact (the team leader) with the
+                organizers.</span></li>
+            <li><span style="font-weight: 400;">Any participant found to be indulging in any form of malpractice will be
+                immediately disqualified.</span></li>
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
 
+  </section>
+  <section id="contact-us">
+    <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+      <div class="bg-light mr-md-3 pt-3 pb-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 py-3">
+          <h2 class="display-5">Contact Us</h2>
+          <p class="lead"></p>
+        </div>
+        <div class="bg-white box-shadow mx-auto" style="border-radius: 21px 21px 21px 21px;">
+          For any queries please email <a href="mailto:contact@scilab.in">contact[at]scilab[dot]in <i
+              class="fas fa-envelope-square"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
   <footer class="container py-5">
     <div class="row">
       <div class="col-12 col-md">
-        <i class="far fa-gem"></i>
         <small class="d-block mb-3 text-muted">
           <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License"
               style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is
@@ -245,19 +286,18 @@
         </ul>
       </div>
       <div class="col-6 col-md">
-        <h5>Resources</h5>
+        <h5>FOSSEE</h5>
         <ul class="list-unstyled text-small">
-          <li><a class="text-muted" href="#">Business</a></li>
-          <li><a class="text-muted" href="#">Education</a></li>
-          <li><a class="text-muted" href="#">Government</a></li>
-          <li><a class="text-muted" href="#">Gaming</a></li>
+          <li><a class="text-muted" href="https://scilab.in" target="_blank">Scilab.in</a></li>
+          <li><a class="text-muted" href="https://cloud.scilab.in" target="_blank">Scilab on Cloud</a></li>
+          <li><a class="text-muted" href="https://xcos.scilab.in" target="_blank">Xcos on Cloud</a></li>
+          <li><a class="text-muted" href="https://rcloud.fossee.in" target="_blank">R on Cloud</a></li>
         </ul>
       </div>
       <div class="col-6 col-md">
         <h5>About</h5>
         <ul class="list-unstyled text-small">
-          <li><a class="text-muted" href="#">Team</a></li>
-          <li><a class="text-muted" href="#">Locations</a></li>
+          <li><a class="text-muted" href="https://fossee.in" target="_blank">FOSSEE</a></li>
         </ul>
       </div>
     </div>
@@ -271,6 +311,7 @@
   <script src="../Scilab-Hackathon-2020/js/popper.min.js"></script>
   <script src="../Scilab-Hackathon-2020/bootstrap-4.5.0/js/bootstrap.min.js"></script>
   <script src="../Scilab-Hackathon-2020/js/holder.min.js"></script>
+  <script src="../Scilab-Hackathon-2020/js/custom.js"></script>
 </body>
 
 </html>
