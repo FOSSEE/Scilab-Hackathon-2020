@@ -17,6 +17,20 @@ $(document).ready(function () {
   }
 
   $window.scroll(scroll_elements);
+
+  //jQuery(".box").hide();
+
+
+  var lastScrollTop = 0;
+  $(window).scroll(function (event) {
+    var st = $(this).scrollTop();
+    if (st > lastScrollTop) {
+      $(".box").hide();
+    } else {
+      $(".box").show();
+    }
+    lastScrollTop = st;
+  });
 });
 //Get the button
 var mybutton = document.getElementById("myBtn");
