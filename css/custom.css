@@ -257,8 +257,8 @@ html {
 }
 
 
-.box{
-  float:left;
+.box {
+  float: left;
   overflow: hidden;
   background: #ffffff;
   position: fixed;
@@ -270,9 +270,10 @@ html {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
+
 /* Add padding and border to inner content
 for better animation effect */
-.box-inner{
+.box-inner {
   width: 100px;
   height: 150px;
 }
