@@ -37,6 +37,15 @@ html {
   text-decoration: none;
 }
 
+.site-header .nav-item.active a{
+  color: #ffffff;
+  background-color: #f50000;
+}
+
+.section-title{
+  padding-top: 1rem !important;
+  color: #f50000;
+}
 /*
  * Extra utilities
  */
