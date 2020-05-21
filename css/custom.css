@@ -1,11 +1,14 @@
 @font-face {
-  font-family: Fira Sans Extra Condensed;
-  src: url(../Fira_Sans_Extra_Condensed/FiraSansExtraCondensed-ExtraLight.ttf);
+  font-family: Fira Sans;
+  src: url(Fira_Sans_Extra_Condensed/FiraSansExtraCondensed-Regular.ttf);
+  font-family: Nunito Sans;
+  src: url(Nunito_Sans/NunitoSans-Regular.ttf);
 }
 
 
+
 body {
-  font-family: 'Nunito sans';
+  font-family: 'Nunito sans' !important;
 }
 
 .container {
@@ -201,6 +204,12 @@ html {
     transform: scale(1, 1);
     opacity: 0;
   }
+}
+
+.site-footer{
+ color:#fff;
+ background-color: #000;
+ width: 100% !important;
 }
 
 #myBtn {
