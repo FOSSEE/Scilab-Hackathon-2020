@@ -25,6 +25,9 @@ $(document).ready(function () {
     }
     lastScrollTop = st;
   });
+
+  $("#top-logo-placeholder").load("top-logo.html");
+
 });
 //Get the button
 var mybutton = document.getElementById("myBtn");
