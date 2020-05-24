@@ -54,7 +54,7 @@
       <a href="https://www.linkedin.com/in/fossee-iitbombay/" class="linkedin" target="_blank"><i
             class="fab fa-linkedin"></i></a>
    </div>
-   <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+   <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-up" aria-hidden="true"></i></button>
    <nav class="navbar navbar-expand-lg site-header sticky-top py-1">
       <a class="navbar-brand" href="#"><span class="navbar-toggler-icon"></span></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -99,7 +99,7 @@
          </ul>
       </div>
    </nav>
-   <section id="front">
+   <!-- <section id="front">
       <div class="front-container wow fadeIn">
          <div class="position-relative overflow-hidden p-0 text-center">
             <div class="col-md-12 p-lg-0 mx-auto my-5 ">
@@ -121,7 +121,39 @@
             </div>
          </div>
       </div>
-   </section>
+   </section> -->
+   <div class="view pt-3" id="front">
+    <!-- Mask & flexbox options-->
+    <div class="d-flex justify-content-center align-items-center pt-0">
+      <!-- Content -->
+      <div class="container px-md-3 px-sm-0">
+        <!--Grid row-->
+        <div class="row wow fadeIn">
+          <!--Grid column-->
+          <div class="col-md-12 text-center wow fadeIn">
+            <h3 class="text-white pt-0 mr-3 ml-3 float-center"  style="font-size:30pt"> A global challenge for bright
+                  minds </h3><br>
+               <h6 class="text-white mr-3 ml-3"  style="font-size:13pt">An initiative of the FOSSEE Project,<br>
+                  Indian Institute of Technology Bombay, India
+               </h6>
+               </p>
+               <h1 class="mb-1 mt-5 pb-3 mr-3 ml-3 text-capitalize font-weight-bold">Scilab
+                  <span>Toolbox</span><br> Hackathon
+               </h1>
+               <h5 class="text-white font-weight-bold">Registration: <span style="color: #f50000">24 May 2020 - 31 May 2020 </span>| Hackathon: <span style="color: #f50000">8 June 2020
+                  - 22 June 2020</span><br><br>
+                  Cash prizes, eCertificate and internship opportunities
+               </h5>
+               <a href="#register" class="about-btn scrollto">Register</a>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </div>
+      <!-- Content -->
+    </div>
+    <!-- Mask & flexbox options-->
+  </div>
    <!-- End front Section -->
    <section id="about">
       <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
@@ -159,7 +191,7 @@
             </div>
             <div class="mx-auto bd-highlight text-justify px-3">
                <p>If you are a good software developer (C, Python, R, etc,.) and know how to interface multiple
-                  software, you can quickly learn Scilab toolbox development using <a href="https://spoken-tutorial.org/tutorial-search/?search_foss=Scilab" target="_blank">Spoken tutorials</a><Link to ST on Scilab Toolboxes> and participate. Register using the <a
+                  software, you can quickly learn Scilab toolbox development, participate, and register using the <a
                      href="https://docs.google.com/forms/d/e/1FAIpQLScuZvyCwQryxAMWFHRVnzA0IyzubKDiFO9Lf0eObMafzm6mSA/viewform"
                      target="_blank"> Google form</a>.
                </p>
@@ -195,9 +227,7 @@
                visualisation, for statistical calculation, etc. To find the list of such software, Click <a
                   href="resources.html">here</a>. The objective of this Hackathon is to bring such software as toolboxes to Scilab users. This will enhance
                the functionality of Scilab. Once such software is available as a Scilab Toolbox, anyone who knows Scilab
-               should be able to access it easily. Examples of building toolboxes are given in these <a
-                  href="https://spoken-tutorial.org/tutorial-search/?search_foss=Scilab" target="_blank">Spoken
-                  Tutorials</a>.</p>
+               should be able to access it easily. Examples of building toolboxes are given for C/C++ <a href="https://drive.google.com/file/d/1lZd5qT9-oDFU3m4iSOLu36MgWIpZKzfD/view" target="_blank">here</a> and for Python in (1) <a href="python-toolbox-creation.html">Python Toolbox Creation</a> (2) <a href="python-toolbox-installation.html">Python Toolbox Installation and Use</a> and (3) <a href="https://drive.google.com/file/d/1glPLq4p-glkxvpGz-apyCSQgbN2xEQ_-/view" target="_blank"> Scilab-Python-Toolbox</a>.</p>
             <p>To summarise, select the open source software, interface it with Scilab, validate it with two or more
                examples and submit.</p>
 
@@ -269,7 +299,7 @@
             </div>
          </div>
       </div>
-   </section>
+   </section> 
 
    <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
       <div class="mr-md-3 text-center overflow-hidden pl-4 pr-4">
@@ -349,12 +379,6 @@
          <footer class="container-fluid py-5 site-footer pl-5 pr-4">
             <div class="row">
                <div class="col-sm-3">
-                  <small class="d-block mb-3 text-muted">
-                  <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="image/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons
-                  Attribution-ShareAlike 4.0 International License</a>.
-                  </small>
-               </div>
-               <div class="col-sm-3">
                   <h5>About</h5>
                   <ul class="list-unstyled text-small">
                      <li><a class="text-muted" href="https://fossee.in" target="_blank">FOSSEE</a></li>
@@ -375,6 +399,12 @@
                      <li><a class="text-muted" href="https://www.scilab.org/" target="_blank">Scilab.org</a></li>
                      <li><a class="text-muted" href="https://atoms.scilab.org/" target="_blank">ATOMS</a></li>
                   </ul>
+               </div>
+               <div class="col-sm-3">
+                  <small class="d-block mb-3 text-muted">
+                  <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="image/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons
+                  Attribution-ShareAlike 4.0 International License</a>.
+                  </small>
                </div>
             </div>
          </footer>
