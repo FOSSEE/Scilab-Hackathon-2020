@@ -4,6 +4,9 @@
 <head>
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+   <meta http-equiv="Pragma" content="no-cache">
+   <meta http-equiv="Expires" content="0">
    <meta name="description" content="Scilab Toolbox Hackathon by FOSSEE">
    <meta name="author" content="FOSSEE web team">
    <meta name="keywords" content="Hackathon, coding, competition">
@@ -13,7 +16,7 @@
    <!-- Bootstrap core CSS -->
    <link href="bootstrap-4.5.0/css/bootstrap.min.css" rel="stylesheet">
    <link href="fontawesome/css/all.css" rel="stylesheet">
-   <link href="css/custom.css" rel="stylesheet">
+   <link href="css/custom.css?ver=1.1" rel="stylesheet">
 </head>
 
 <body>
@@ -424,7 +427,7 @@
    <script src="js/popper.min.js"></script>
    <script src="bootstrap-4.5.0/js/bootstrap.min.js"></script>
    <script src="js/holder.min.js"></script>
-   <script src="js/custom.js"></script>
+   <script src="js/custom.js?v={{ substr(md5(date("Y-m-d_Hi")),10,18) }}"></script>
    <!-- Global site tag (gtag.js) - Google Analytics -->
    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-82999923-1"></script>
    <script>
