@@ -1,5 +1,6 @@
 $(document).ready(function () {
   var $window = $(window);
+
   function scroll_elements() {
     var scroll = $window.scrollTop();
     var scrollLayer1 = scroll / 1.4;
@@ -13,20 +14,26 @@ $(document).ready(function () {
       "transform", "translate3d(0," + scrollLayer2 + "px,0)"
     );
   }
-  $window.scroll(scroll_elements);
-  //jQuery(".box").hide();
-  var lastScrollTop = 0;
-  $(window).scroll(function (event) {
-    var st = $(this).scrollTop();
-    if (st > lastScrollTop) {
-      $(".box").hide();
-    } else {
-      $(".box").show();
-    }
-    lastScrollTop = st;
-  });
-
+  // load logo page
   $("#top-logo-placeholder").load("top-logo.html");
+  // get time for maintance message
+  var result = getTime();
+  if (result == true) {
+    jQuery(".box").show();
+    $window.scroll(scroll_elements);
+    var lastScrollTop = 0;
+    $(window).scroll(function (event) {
+      var st = $(this).scrollTop();
+      if (st > lastScrollTop) {
+        $(".box").hide();
+      } else {
+        $(".box").show();
+      }
+      lastScrollTop = st;
+    });
+  } else {
+    jQuery(".box").hide();
+  }
 
 });
 //Get the button
@@ -35,6 +42,7 @@ var mybutton = document.getElementById("myBtn");
 window.onscroll = function () {
   scrollFunction()
 };
+
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     mybutton.style.display = "block";
@@ -46,4 +54,28 @@ function scrollFunction() {
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
+}
+
+
+function getTime() {
+
+  var startalertTime = new Date();
+  startalertTime.setHours(01, 15, 0); // 01.30 am
+  var endalertTime = new Date();
+  endalertTime.setHours(02, 00, 0); // 2.00 am
+  var currentTime = new Date();
+  var currentOffset = currentTime.getTimezoneOffset();
+  var ISTOffset = 330; // IST offset UTC +5:30
+  var ISTTime = new Date(currentTime.getTime() + (ISTOffset + currentOffset) * 60000);
+
+  // ISTTime now represents the time in IST coordinates
+
+  var hoursIST = ISTTime.getHours()
+  var minutesIST = ISTTime.getMinutes()
+  if (ISTTime >= startalertTime && ISTTime < endalertTime) {
+    return true;
+  } else {
+    return false;
+  }
+
 }
