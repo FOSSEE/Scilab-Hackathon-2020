@@ -10,16 +10,27 @@
   <meta name="description" content="Scilab Toolbox Hackathon by FOSSEE">
   <meta name="author" content="FOSSEE web team">
   <meta name="keywords" content="Hackathon, coding, competition">
-  <meta name="keywords" content="Scilab, Scilab Toolbox, Scilab Toolbox Hackathon 2020, Open source, software, Toolbox development">
+  <meta name="keywords"
+    content="Scilab, Scilab Toolbox, Scilab Toolbox Hackathon 2020, Open source, software, Toolbox development">
   <link rel="icon" href="image/STH.ico">
   <title>Scilab Toolbox Hackathon</title>
   <!-- Bootstrap core CSS -->
   <link href="bootstrap-4.5.0/css/bootstrap.min.css" rel="stylesheet">
   <link href="fontawesome/css/all.css" rel="stylesheet">
   <link href="css/custom.css?ver=1.1" rel="stylesheet">
+  <script>
+    function reloadFunction(event) {
+      if (event.persisted) {
+        console.log("The page was cached by the browser");
+        location.reload(true);
+      } else {
+        console.log("The page was NOT cached by the browser");
+      }
+    }
+  </script>
 </head>
 
-<body>
+<body onpageshow="reloadFunction(event)">
   <div id="top-logo-placeholder" class="container">
   </div>
   <div class="icon-bar">
@@ -67,10 +78,12 @@
           <a class="nav-link" href="index.html#rules-and-regulations">Rules and Regulations</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="https://docs.google.com/document/d/1XDYS75Q2cULQ_Lvw57ckfmRoB8sZ7QlE9-CBjpA4xgM/edit?usp=sharing" target="_blank">FAQ's</a>
+          <a class="nav-link"
+            href="https://docs.google.com/document/d/1XDYS75Q2cULQ_Lvw57ckfmRoB8sZ7QlE9-CBjpA4xgM/edit?usp=sharing"
+            target="_blank">FAQ's</a>
         </li>
         <li class="nav-item">
-               <a class="nav-link" href="rewards.html">Rewards</a>
+          <a class="nav-link" href="rewards.html">Rewards</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="index.html#contact-us">Contact us</a>
