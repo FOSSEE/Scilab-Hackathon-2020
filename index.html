@@ -17,10 +17,20 @@
    <!-- Bootstrap core CSS -->
    <link href="bootstrap-4.5.0/css/bootstrap.min.css" rel="stylesheet">
    <link href="fontawesome/css/all.css" rel="stylesheet">
-   <link href="css/custom.css?ver=1.2" rel="stylesheet">
+   <link href="css/custom.css?ver=1.3" rel="stylesheet">
+   <script>
+      function reloadFunction(event) {
+         if (event.persisted) {
+            console.log("The page was cached by the browser");
+            location.reload(true);
+         } else {
+            console.log("The page was NOT cached by the browser");
+         }
+      }
+   </script>
 </head>
 
-<body>
+<body onpageshow="reloadFunction(event)">
    <div id="top-logo-placeholder" class="container">
    </div>
    <div class="icon-bar">
@@ -160,15 +170,16 @@
             <h4 class="display-5 section-title">What is Scilab Toolbox Hackathon?</h4>
          </div>
          <div class="mx-auto bd-highlight px-3">
-            <p class="text-justify">Scilab Toolbox Hackathon is an online, nonstop "Scilab Toolbox Development" based on an ALREADY AVAILABLE
+            <p class="text-justify">Scilab Toolbox Hackathon is an online, nonstop "Scilab Toolbox Development" based on
+               an ALREADY AVAILABLE
                and ESTABLISHED open source software, a competition initiated by the FOSSEE, IIT Bombay. It aims at
                inspiring minds across the globe to build outstanding toolboxes for Scilab. To know more about the Scilab
                toolbox hackathon, please click <a href="proposal.pdf" target="_blank"> here</a>.
-               </p>
-               <div class="p-2 pt-1 pb-1 text-center">
-                  <figure><img src="image/Process_flow5.webp" class="img-fluid" style="width:650px;" alt="process_flow">
-                  </figure>
-               </div>
+            </p>
+            <div class="p-2 pt-1 pb-1 text-center">
+               <figure><img src="image/Process_flow5.webp" class="img-fluid" style="width:650px;" alt="process_flow">
+               </figure>
+            </div>
          </div>
       </div>
    </div>
@@ -275,15 +286,13 @@
                      </a>
                   </div>
                   <div class="column p-2 pt-1 pb-1 text center"><a href="https://www.srmiic.com/" target="_blank">
-                        <figure><img src="image/srm_logo.png" class="img-fluid"
-                              alt="SIIC" style="height:60px;">
+                        <figure><img src="image/srm_logo.png" class="img-fluid" alt="SIIC" style="height:60px;">
                            <figcaption>SIIC</figcaption>
                         </figure>
                      </a>
                   </div>
                   <div class="column p-2 pt-1 pb-1 text center"><a href="https://fablab.srmiic.com/" target="_blank">
-                        <figure><img src="image/srm2_logo.png" class="img-fluid"
-                              alt="SIIC" style="height:60px;">
+                        <figure><img src="image/srm2_logo.png" class="img-fluid" alt="SIIC" style="height:60px;">
                            <figcaption>FABLAB</figcaption>
                         </figure>
                      </a>
