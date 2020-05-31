@@ -90,7 +90,7 @@ html {
 #front {
   width: 100%;
   height: 100vh;
-  background: url(../image/bg.webp) top center;
+  background: url(../image/bg.png) top center;
   background-size: cover;
   overflow: hidden;
   position: relative;
