@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+   <meta http-equiv="Pragma" content="no-cache">
+   <meta http-equiv="Expires" content="0">
+   <meta name="description" content="Scilab Toolbox Hackathon by FOSSEE">
+   <meta name="author" content="FOSSEE web team">
+   <meta name="keywords" content="Hackathon, coding, competition">
+   <meta name="keywords"
+	  content="Scilab, Scilab Toolbox, Scilab Toolbox Hackathon 2020, Open source, software, Toolbox development">
+   <link rel="icon" href="image/STH.ico">
+   <title>Scilab Toolbox Hackathon</title>
+   <!-- Bootstrap core CSS -->
+   <link href="bootstrap-4.5.0/css/bootstrap.min.css" rel="stylesheet">
+   <link href="fontawesome/css/all.css" rel="stylesheet">
+   <link href="css/custom.css?ver=1.4" rel="stylesheet">
+   <script src="js/jquery-3.2.1.min.js"></script>
+   <script src="js/popper.min.js"></script>
+   <script src="bootstrap-4.5.0/js/bootstrap.min.js"></script>
+   <script src="js/holder.min.js"></script>
+   <script src="js/custom.js?v={{ substr(md5(date("Y-m-d_Hi")),10,18) }}"></script>
+   <script>
+	  function reloadFunction(event) {
+		 if (event.persisted) {
+			console.log("The page was cached by the browser");
+			location.reload(true);
+		 } else {
+			console.log("The page was NOT cached by the browser");
+		 }
+	  }
+   </script>
+   <script language="javascript">
+function divReplace(){
+
+            setTimeout(
+      function(){
+        
+         $('#Div-A').replaceWith($('#Div-B'));
+         $('#Div-B').show();
+        divReplacetwice();
+      },
+      1000
+   );
+  
+ }
+ function divReplacetwice(){
+ 
+   setTimeout(
+      function(){
+        
+         $('#Div-B').replaceWith($('#Div-C'));
+         $('#Div-C').show();
+        
+      },
+      1000
+   );
+   redirectTime = "2500";
+   redirectURL = "submissions.html";
+      setTimeout("location.href = redirectURL;",redirectTime);
+   }
+</script>
+</head>
+
+<!-- <body onpageshow="reloadFunction(event)">
+   <div id="top-logo-placeholder" class="container">
+   </div>
+   <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-up"
+		 aria-hidden="true"></i></button> -->
+
+
+<body>
+
+<center>
+      <div id="Div-A">
+      <button  onclick="divReplace()">
+      <img id="myImage" src="image/img-a.png" class="img-fluid">  
+      </button>
+      </div> 
+<div id="Div-B" style="display:none;"><img id="myImage" src="image/welcome.png" class="img-fluid"></div> 
+<div id="Div-C" style="display:none;">
+   <img id="myImage" src="image/second.png" class="img-fluid">
+</div>
+</center>
+</body>
+</html>
