@@ -28,6 +28,58 @@
       }
     }
   </script>
+  <script language="javascript">
+function divReplaceChampions(){
+
+            setTimeout(
+      function(){
+        
+        // $('#Div-A').replaceWith($('#Div-B'));
+         $('#Div-B').show();
+        divReplaceChampionstwice();
+      },
+      1000
+   );
+  
+ }
+ function divReplaceChampionstwice(){
+ 
+   setTimeout(
+      function(){
+        
+         $('#Div-B').replaceWith($('#champions'));
+         $('#champions').show();
+        
+      },
+      3500
+   );
+   }
+   function divReplaceConsolation(){
+
+            setTimeout(
+      function(){
+        
+        // $('#Div-A').replaceWith($('#Div-B'));
+         $('#consolation-congratulations').show();
+        divReplaceConsolationtwice();
+      },
+      1000
+   );
+  
+ }
+ function divReplaceConsolationtwice(){
+ 
+   setTimeout(
+      function(){
+        
+         $('#consolation-congratulations').replaceWith($('#consolation'));
+         $('#consolation').show();
+        
+      },
+      3500
+   );
+   }
+</script>
 </head>
 
 <body onpageshow="reloadFunction(event)">
@@ -59,21 +111,18 @@
         <li class="nav-item">
           <a class="nav-link" href="index.html#about">About</a>
         </li>
-        <!-- <li class="nav-item">
+       <!--  <li class="nav-item">
           <a class="nav-link" href="index.html#register">Registration</a>
         </li>
-        <li class="nav-item active">
+        <li class="nav-item">
           <a class="nav-link" href="resources.html">Resources</a>
         </li> -->
         <li class="nav-item">
                <a href="results.html" class="nav-link">Results</a>
             </li>
-       <!--  <li class="nav-item">
-          <a class="nav-link" href="submissions.html">Submissions</a>
-        </li> -->
         <li class="nav-item">
           <a class="nav-link" href="schedule.html">Schedule</a>
-            </li>
+        </li>
         <li class="nav-item">
           <a class="nav-link" href="index.html#endorsement-partners">Endorsement Partners</a>
         </li>
@@ -96,86 +145,191 @@
     </div>
   </nav>
 
-  <section id="about">
-    <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-      <div class="bg-light mr-md-3 text-center overflow-hidden">
-        <div class="py-3">
-          <h4 class="display-5 section-title">Resources</h4>
-        </div>
-
-        <div class="mx-auto bd-highlight text-justify px-3">
-          <ul>
-            <li>
-              <p style="font-weight: 400;">The list given below gives links to some open source software. As these lists
-                could include some proprietary software also, please make sure that the software you choose for the
-                Hackathon is indeed open source. Please note that in general free of cost software and software that are
-                free for students and faculty need not be open source software. Make sure that you select ONLY open
-                source
-                software. The following list is only a sample. There are many more open source software not listed in
-                these
-                links. Some questions on the Hackathon Registration/Proposal Form will give an idea of how your proposal
-                will be judged.</p>
-              <p style="font-weight: 400;">
-                <ul>
-                  <li><a href="https://en.wikipedia.org/wiki/List_of_finite_element_software_packages"
-                      target="_blank">Finite Element software packages</a></li>
-
-                  <li><a href="https://en.wikipedia.org/wiki/List_of_statistical_software" target="_blank">List of
-                      Statistical Software</a></li>
-
-                  <li><a href="https://en.wikipedia.org/wiki/List_of_information_graphics_software" target="_blank">List
-                      of
-                      information Graphics Software</a></li>
-
-                  <li><a href="https://en.wikipedia.org/wiki/List_of_numerical_libraries" target="_blank">List of
-                      numerical
-                      Libraries</a></li>
-
-                  <li><a href="https://en.wikipedia.org/wiki/Outline_of_software#Software_products" target="_blank">List
-                      of
-                      Software Products</a></li>
-
-                  <li><a href="https://en.wikipedia.org/wiki/Mathematical_software" target="_blank">List of mathematical
-                      software</a></li>
-
-                  <li><a href="https://en.wikipedia.org/wiki/Web-based_simulation" target="_blank">List of web based
-                      simulation software</a></li>
-
-                  <li><a href="https://en.wikipedia.org/wiki/Comparison_of_deep-learning_software"
-                      target="_blank">Comparison of deep learning software</a></li>
-
-                  <li><a href="https://en.wikipedia.org/wiki/Comparison_of_numerical-analysis_software"
-                      target="_blank">Comparison of numerical analysis software</a></li>
-
-                  <li><a
-                      href="http://www.stochasticlifestyle.com/comparison-differential-equation-solver-suites-matlab-r-julia-python-c-fortran/"
-                      target="_blank">Comparison of differential equation solver suites</a></li>
-
-                  <li><a
-                      href="https://docs.google.com/spreadsheets/d/1pDBSm907l2ufOWY4dMGIYO1Wrwbq0JJBWdkdv-7_bAQ/edit?usp=sharing"
-                      target="_blank">List of open source software for Numerical Computation</a></li>
-                </ul>
-              </p>
-            </li>
-            <li>
-              <p style="font-weight: 400;">One can learn Scilab through Spoken tutorials available <a
-                  href="https://spoken-tutorial.org/tutorial-search/?search_foss=Scilab&search_language=English"
-                  target="_blank">here</a>.
-              </p>
-            </li>
-            <li>
-              <p style="font-weight: 400;">You may want to watch four short videos given by Prof. Kannan Moudgalya about
-                Scilab and its benefits. Click <a
-                  href="https://www.youtube.com/playlist?list=PL_uaeekrhGzKrZ8NGHs6gUVNmV_lZoXx0&disable_polymer=true"
-                  target="_blank">here</a> to watch them on YouTube.
-              </p>
-            </li>
-          </ul>
-        </div>
+<section id="announcement">
+      
+      <div class="pt-3 overflow-hidden pl-4 pr-4">
+            <div class="py-3">
+               <h4 class="display-5 section-title text-center">Our hearty congratulations to all the winners!</h4>
+            </div>
+            <div class="mx-auto bd-highlight px-3 pb-3">
+            <div class="row">
+              <div class="col-md-4">
+  <center><button type="button" class="btn btn-lg btn-success" data-toggle="collapse" id="Div-A" onclick="divReplaceChampions()">Announce Champions</button></center>
+  </div>
+  <div class="col-md-8">
+  <div id="Div-B" style="display:none;"><img id="myImage" src="image/congratulations.png" class="img-fluid"></div> 
+  <div id="champions" class="collapse">
+  <!-- <img src="image/congratulations.jpeg"> -->
+  <p>List of Champions:</p>
+    <table class="table table-bordered">
+<tbody>
+<tr>
+<td>Team ID</td>
+<td>Software interfaced</td>
+<td>Name</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="4">
+<div>STH105</div>
+</td>
+<td colspan="1" rowspan="4">
+<div>Point Cloud Library</div>
+</td>
+<td>Ankit Kumar</td>
+</tr>
+<tr>
+<td>Akshay S Rao</td>
+</tr>
+<tr>
+<td>Aliasgar AV</td>
+</tr>
+<tr>
+<td>Mohammed Rehab Sait</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="4">
+<div>STH101</div>
+</td>
+<td colspan="1" rowspan="4">
+<div>Armadillo</div>
+</td>
+<td>Ajay S</td>
+</tr>
+<tr>
+<td>Kalai Chelvan</td>
+</tr>
+<tr>
+<td>Pooja K</td>
+</tr>
+<tr>
+<td>Prabhakar P</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="3">
+<div>STH030</div>
+</td>
+<td colspan="1" rowspan="3">
+<div>Graphviz</div>
+</td>
+<td>Neelakanda Bharathiraja Urgavalan</td>
+</tr>
+<tr>
+<td>Hariharan Ravi</td>
+</tr>
+<tr>
+<td>Ajay Krishna Vasanthakumar</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="4">
+<div>STH109</div>
+</td>
+<td colspan="1" rowspan="4">
+<div>GNU Scientific Library</div>
+</td>
+<td>Rajan Goyal</td>
+</tr>
+<tr>
+<td>Rashmi Verma</td>
+</tr>
+<tr>
+<td>Sakshi Verma</td>
+</tr>
+<tr>
+<td>Mahiguhappriyaprakash</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="2">
+<div>STH026</div>
+</td>
+<td colspan="1" rowspan="2">
+<div>Pandas</div>
+</td>
+<td>Sundeep V V S Akella</td>
+</tr>
+<tr>
+<td>Aditya Dhinavahi</td>
+</tr>
+</tbody>
+</table>
+  </div>
+  </div>
+            </div>
+            <div class="row pt-5">
+              <div class="col-md-4">
+  <center><button type="button" class="btn btn-lg btn-info" data-toggle="collapse" id="announce-consolation" onclick="divReplaceConsolation()">Announce Consolation prize winners</button></center>
+  </div>
+  <div class="col-md-8">
+  <div id="consolation-congratulations" style="display:none;"><img id="myImage" src="image/congratulations.png" class="img-fluid"></div> 
+  <div id="consolation" class="collapse">
+  <p>List of Consolation prize winners:</p>
+   <table class="table table-bordered">
+<tbody>
+<tr>
+<td>Team ID</td>
+<td>Software interfaced</td>
+<td>Name</td>
+</tr>
+<tr>
+<td>STH019</td>
+<td>Keras</td>
+<td>Tanay Karve</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="3">
+<div>STH149</div>
+</td>
+<td colspan="1" rowspan="3">
+<div>Blender</div>
+</td>
+<td>Naveenkumar Madhesh</td>
+</tr>
+<tr>
+<td>Balaji Ravichandran</td>
+</tr>
+<tr>
+<td>Ganapathiraj Thangavel</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="4">
+<div>STH005</div>
+</td>
+<td colspan="1" rowspan="4">
+<div>R-studio</div>
+</td>
+<td>Tarun A H</td>
+</tr>
+<tr>
+<td>Venkat Ragavan</td>
+</tr>
+<tr>
+<td>Garima Dave</td>
+</tr>
+<tr>
+<td>Akash Lad</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="2">
+<div>STH079</div>
+</td>
+<td colspan="1" rowspan="2">
+<div>Open edX (web interface)</div>
+</td>
+<td>Anupama Pradeepan</td>
+</tr>
+<tr>
+<td>Ramaseshan S</td>
+</tr>
+</tbody>
+</table>
+  </div>
+  </div>
+            </div>
+            </div>
+            </div>
       </div>
-    </div>
-  </section>
-  <section id="footer" class="site-footer">
+
+   </section>
+    <section id="footer" class="site-footer">
     <footer class="container-fluid py-5 site-footer pl-5 pr-4">
       <div class="row">
         <div class="col-sm-3">
