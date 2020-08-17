@@ -16,8 +16,8 @@
   <title>Scilab Toolbox Hackathon</title>
   <!-- Bootstrap core CSS -->
   <link href="bootstrap-4.5.0/css/bootstrap.min.css" rel="stylesheet">
-  <link href="fontawesome/css/all.css" rel="stylesheet">
-  <link href="css/custom.css?ver=1.1" rel="stylesheet">
+   <link href="fontawesome/css/all.css" rel="stylesheet">
+   <link href="css/custom.css?ver=1.4" rel="stylesheet">
   <script>
     function reloadFunction(event) {
       if (event.persisted) {
@@ -68,7 +68,7 @@
         <!-- <li class="nav-item">
           <a class="nav-link" href="submissions.html">Submissions</a>
         </li> -->
-        <li class="nav-item">
+        <li class="nav-item active">
                <a href="results.html" class="nav-link">Results</a>
             </li>
             <li class="nav-item">
@@ -105,64 +105,170 @@
         </div>
 
         <div class="mx-auto bd-highlight text-justify px-3">
-        <p>The list given below is the list of selected teams for final round. Please check your email for the details of the final round.</p>
-          <table class="table">
-<tbody>
-<tr>
-<th>Team ID</th>
-<th>Software interfaced</th>
-</tr>
-<tr>
-<td>STH005</td>
-<td>R-studio</td>
-</tr>
-<tr>
-<td>STH019</td>
-<td>Keras</td>
-</tr>
-<tr>
-<td>STH030</td>
-<td>Graphviz</td>
-</tr>
-<tr>
-<td>STH079</td>
-<td>Open edX (web interface)</td>
-</tr>
-<tr>
-<td>STH101</td>
-<td>Armadillo</td>
-</tr>
-<tr>
-<td>STH103</td>
-<td>Dlib</td>
-</tr>
-<tr>
-<td>STH104</td>
-<td>Point Cloud Library</td>
-</tr>
-<tr>
-<td>STH105</td>
-<td>Point Cloud Library</td>
-</tr>
-<tr>
-<td>STH109</td>
-<td>GNU Scientific Library</td>
-</tr>
-<tr>
-<td>STH149</td>
-<td>Blender</td>
-</tr>
-<tr>
-<td>STH154</td>
-<td>OpenMP</td>
-</tr>
-<tr>
-<td>STH026</td>
-<td>Pandas</td>
-</tr>
-</tbody>
-</table>
-
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="champions-tab" data-toggle="tab" href="#champions" role="tab" aria-controls="champions" aria-selected="true">Champions</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="consolation-tab" data-toggle="tab" href="#consolation" role="tab" aria-controls="consolation" aria-selected="false">Consolation Prize Winners</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active pt-2" id="champions" role="tabpanel" aria-labelledby="champions-tab">
+      <p>List of Champions:</p>
+          <table class="table table-bordered">
+      <tbody>
+      <tr>
+      <td>Team ID</td>
+      <td>Software interfaced</td>
+      <td>Name</td>
+      </tr>
+      <tr>
+      <td colspan="1" rowspan="4">
+      <div>STH105</div>
+      </td>
+      <td colspan="1" rowspan="4">
+      <div>Point Cloud Library</div>
+      </td>
+      <td>Ankit Kumar</td>
+      </tr>
+      <tr>
+      <td>Akshay S Rao</td>
+      </tr>
+      <tr>
+      <td>Aliasgar AV</td>
+      </tr>
+      <tr>
+      <td>Mohammed Rehab Sait</td>
+      </tr>
+      <tr>
+      <td colspan="1" rowspan="4">
+      <div>STH101</div>
+      </td>
+      <td colspan="1" rowspan="4">
+      <div>Armadillo</div>
+      </td>
+      <td>Ajay S</td>
+      </tr>
+      <tr>
+      <td>Kalai Chelvan</td>
+      </tr>
+      <tr>
+      <td>Pooja K</td>
+      </tr>
+      <tr>
+      <td>Prabhakar P</td>
+      </tr>
+      <tr>
+      <td colspan="1" rowspan="3">
+      <div>STH030</div>
+      </td>
+      <td colspan="1" rowspan="3">
+      <div>Graphviz</div>
+      </td>
+      <td>Neelakanda Bharathiraja Urgavalan</td>
+      </tr>
+      <tr>
+      <td>Hariharan Ravi</td>
+      </tr>
+      <tr>
+      <td>Ajay Krishna Vasanthakumar</td>
+      </tr>
+      <tr>
+      <td colspan="1" rowspan="4">
+      <div>STH109</div>
+      </td>
+      <td colspan="1" rowspan="4">
+      <div>GNU Scientific Library</div>
+      </td>
+      <td>Rajan Goyal</td>
+      </tr>
+      <tr>
+      <td>Rashmi Verma</td>
+      </tr>
+      <tr>
+      <td>Sakshi Verma</td>
+      </tr>
+      <tr>
+      <td>Mahiguhappriyaprakash</td>
+      </tr>
+      <tr>
+      <td colspan="1" rowspan="2">
+      <div>STH026</div>
+      </td>
+      <td colspan="1" rowspan="2">
+      <div>Pandas</div>
+      </td>
+      <td>Sundeep V V S Akella</td>
+      </tr>
+      <tr>
+      <td>Aditya Dhinavahi</td>
+      </tr>
+      </tbody>
+      </table>
+  </div>
+  <div class="tab-pane fade pt-2" id="consolation" role="tabpanel" aria-labelledby="consolation-tab">
+    <p>List of Consolation prize winners:</p>
+         <table class="table table-bordered">
+      <tbody>
+      <tr>
+      <td>Team ID</td>
+      <td>Software interfaced</td>
+      <td>Name</td>
+      </tr>
+      <tr>
+      <td>STH019</td>
+      <td>Keras</td>
+      <td>Tanay Karve</td>
+      </tr>
+      <tr>
+      <td colspan="1" rowspan="3">
+      <div>STH149</div>
+      </td>
+      <td colspan="1" rowspan="3">
+      <div>Blender</div>
+      </td>
+      <td>Naveenkumar Madhesh</td>
+      </tr>
+      <tr>
+      <td>Balaji Ravichandran</td>
+      </tr>
+      <tr>
+      <td>Ganapathiraj Thangavel</td>
+      </tr>
+      <tr>
+      <td colspan="1" rowspan="4">
+      <div>STH005</div>
+      </td>
+      <td colspan="1" rowspan="4">
+      <div>R-studio</div>
+      </td>
+      <td>Tarun A H</td>
+      </tr>
+      <tr>
+      <td>Venkat Ragavan</td>
+      </tr>
+      <tr>
+      <td>Garima Dave</td>
+      </tr>
+      <tr>
+      <td>Akash Lad</td>
+      </tr>
+      <tr>
+      <td colspan="1" rowspan="2">
+      <div>STH079</div>
+      </td>
+      <td colspan="1" rowspan="2">
+      <div>Open edX (web interface)</div>
+      </td>
+      <td>Anupama Pradeepan</td>
+      </tr>
+      <tr>
+      <td>Ramaseshan S</td>
+      </tr>
+      </tbody>
+      </table>
+  </div>
         </div>
       </div>
     </div>
