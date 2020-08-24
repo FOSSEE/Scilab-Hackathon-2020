@@ -99,12 +99,12 @@
 
   <section id="results">
     <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-      <div class="bg-light mr-md-3 text-center overflow-hidden pl-4 pr-4">
+      <div class="bg-light mr-md-3 overflow-hidden pl-4 pr-4">
         <div class="py-3">
           <h4 class="display-5 section-title">Results</h4>
         </div>
 
-        <div class="mx-auto bd-highlight text-justify px-3">
+        <div class="mx-auto bd-highlight px-3">
             <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item">
     <a class="nav-link active" id="champions-tab" data-toggle="tab" href="#champions" role="tab" aria-controls="champions" aria-selected="true">Champions</a>
@@ -116,13 +116,16 @@
 <div class="tab-content" id="myTabContent">
   <div class="tab-pane fade show active pt-2" id="champions" role="tabpanel" aria-labelledby="champions-tab">
       <p>List of Champions:</p>
-          <table class="table table-bordered">
+      <p class="text-justify">Total 5 teams were found to be equally good, so all 5 teams were recognised as champions instead of traditional 1st, 2nd, and 3rd prizes.</p>
+          <table class="table table-bordered table-responsive results-table">
+      
+      <thead class="thead-dark">
+      <th>Team ID</th>
+      <th>Software interfaced</th>
+      <th>Name</th>
+      <th>Description about the toolbox</th>
+      </thead>
       <tbody>
-      <tr>
-      <td>Team ID</td>
-      <td>Software interfaced</td>
-      <td>Name</td>
-      </tr>
       <tr>
       <td colspan="1" rowspan="4">
       <div>STH105</div>
@@ -131,6 +134,9 @@
       <div>Point Cloud Library</div>
       </td>
       <td>Ankit Kumar</td>
+      <td colspan="1" rowspan="4" class="text-justify">
+        The Point Cloud Library is an open-source library of algorithms for point cloud processing tasks and 3D geometry processing, such as occur in three-dimensional computer vision. The participants have enabled calls to about 41 functions of PCL from Scilab. Some of the functions include operations such as generating a random point cloud, converting PCD file to PNG format, downsampling a cloud using pcl, etc. 
+      </td>
       </tr>
       <tr>
       <td>Akshay S Rao</td>
@@ -148,7 +154,11 @@
       <td colspan="1" rowspan="4">
       <div>Armadillo</div>
       </td>
+      
       <td>Ajay S</td>
+      <td colspan="1" rowspan="4" class="text-justify">
+        Armadillo is a linear algebra software library for the C++ programming language. It aims to provide efficient and streamlined base calculations, while at the same time having a straightforward and easy-to-use interface. The participants have enabled calls to about 104 functions of Armadillo from Scilab. Some of the functions include operations such as calculating the principal component, performing Matrix convolution in 2d, computing Matrix exponential, etc.
+      </td>
       </tr>
       <tr>
       <td>Kalai Chelvan</td>
@@ -166,7 +176,12 @@
       <td colspan="1" rowspan="3">
       <div>Graphviz</div>
       </td>
+      
       <td>Neelakanda Bharathiraja Urgavalan</td>
+      <td colspan="1" rowspan="3" class="text-justify">
+        Graphviz (short for Graph Visualization Software) is a package of open-source tools for drawing graphs specified in DOT language scripts and a set of tools that can generate and/or process DOT files. The participants have enabled calls to about 7 functions of Graphviz from Scilab. Their toolbox offers a GUI to plot adjacency matrix or the graph file using Graphviz APIs, converting csv to adjacency, etc.
+
+      </td>
       </tr>
       <tr>
       <td>Hariharan Ravi</td>
@@ -181,7 +196,25 @@
       <td colspan="1" rowspan="4">
       <div>GNU Scientific Library</div>
       </td>
+      
       <td>Rajan Goyal</td>
+      <td colspan="1" rowspan="4" class="text-justify">
+        <p>Scilab is extensively used by university level students and researchers for various mathematical and physical computations. So, having a handful of special functionalities that support such activities is more essential. sci_gsl is a cross-platform, open source and user-friendly toolbox that implements the various functionalities of GNU Scientific Library (GSL) in Scilab. The GNU Scientific Library (GSL) is a numerical library for C and C++ programmers. It is free software under the GNU General Public License. The current version of the toolbox is tested on Ubuntu (18.04 and 20.04) both for 32 bit and 64 bit Operating Systems at the moment. You need to install GSL 2.6 before installing the toolbox. The installation procedure of GSL 2.6 in Ubuntu is given in the readme file. The GSL 2.6 is available for download at <a href="http://mirrors.kernel.org/gnu/gsl/gsl-2.6.tar.gz" target="_blank">http://mirrors.kernel.org/gnu/gsl/gsl-2.6.tar.gz</a></p>
+<p>We are working on broadening its compatibility with Windows and the version for the same will be published soon.</p>
+<strong>Features</strong>
+<ol>
+<li>Integration of some special functions with three types of Monte Carlo method (PLAIN, MISER, VEGAS).</li>
+<li>Computation of normalized radial wavefunction of hydrogen like atoms.</li>
+<li>Computation of 45 special functions like Airy&rsquo;s function, Bessel Function etc.</li>
+<li>Returning values of about 25 physical constants in S.I or MKS units.</li>
+<li>Computation of Associated Legendre Polynomial and Normalized Associate Legendre. Polynomials which are suitable for spherical harmonics.</li>
+<li>Solving system of linear equations using LU decomposition, QR decomposition and Householder solver.&nbsp;</li>
+<li>About 88 distribution functions like Gaussian distribution, T-distribution etc. are available.</li>
+</ol>
+In total, about 168 new functionalities from GNU Scientific Library are made available in Scilab through sci_gsl<br>
+Github link: <a href="https://github.com/RajanGoyal1002/sci_gsl" target="_blank">https://github.com/RajanGoyal1002/sci_gsl</a><br>
+ATOMS link: <a href="https://atoms.scilab.org/toolboxes/GSL/1.0" target="_blank">https://atoms.scilab.org/toolboxes/GSL/1.0</a>
+      </td>
       </tr>
       <tr>
       <td>Rashmi Verma</td>
@@ -199,7 +232,12 @@
       <td colspan="1" rowspan="2">
       <div>Pandas</div>
       </td>
+      
       <td>Sundeep V V S Akella</td>
+      <td colspan="1" rowspan="2" class="text-justify">
+        <p>In computer programming, pandas is a software library written for the Python programming language for data manipulation and analysis. In particular, it offers data structures and operations for manipulating numerical tables and time series. The participants have enabled calls to about 157 functions of Pandas from Scilab. Some of the functions include operations such as applying a function along an axis of the DataFrame, column-wise combining with another DataFrame, return cross-section from the Series/DataFrame, etc.<br>
+Github link: <a href="https://github.com/adityadhinavahi/SciPandas" target="_blank">https://github.com/adityadhinavahi/SciPandas</a></p>
+      </td>
       </tr>
       <tr>
       <td>Aditya Dhinavahi</td>
@@ -209,17 +247,23 @@
   </div>
   <div class="tab-pane fade pt-2" id="consolation" role="tabpanel" aria-labelledby="consolation-tab">
     <p>List of Consolation prize winners:</p>
-         <table class="table table-bordered">
+         <table class="table table-bordered table-responsive results-table">
+      <thead class="thead-dark">
+      <th>Team ID</th>
+      <th>Software interfaced</th>
+      <th>Name</th>
+      <th>Description about the toolbox</th>
+      </thead>
       <tbody>
-      <tr>
-      <td>Team ID</td>
-      <td>Software interfaced</td>
-      <td>Name</td>
-      </tr>
       <tr>
       <td>STH019</td>
       <td>Keras</td>
+      
       <td>Tanay Karve</td>
+      <td class="text-justify">
+      <p>KERAS is an Open Source Neural Network library written in Python. It provides a scikit-learn type API (written in Python) for building Neural Networks. The participant has enabled calls to about 7 functions of Keras from Scilab. Some of the functions include operations such as testing and training the neural network, developing a transfer-learning image recognition model, plotting confusion matrix data, etc.</p>
+<p>Github link: <a href="https://github.com/TanayKarve/scilab-keras-toolbox" target="_blank">https://github.com/TanayKarve/scilab-keras-toolbox</a></p>
+<p>ATOMS link: <a href="https://atoms.scilab.org/toolboxes/keras-toolbox/1.0" target="_blank">https://atoms.scilab.org/toolboxes/keras-toolbox/1.0</a></p></td>
       </tr>
       <tr>
       <td colspan="1" rowspan="3">
@@ -228,7 +272,11 @@
       <td colspan="1" rowspan="3">
       <div>Blender</div>
       </td>
+     
       <td>Naveenkumar Madhesh</td>
+       <td colspan="1" rowspan="3" class="text-justify">
+        Blender is a free and open-source 3D computer graphics software toolset used for creating animated films, visual effects, art, 3D printed models, motion graphics, interactive 3D applications, virtual reality and computer games. The participants have enabled calls to about 6 functions of Blender from Scilab. Some of the functions include operations such as blender connector, parsing animation file, playing animation file, etc.
+      </td>
       </tr>
       <tr>
       <td>Balaji Ravichandran</td>
@@ -243,7 +291,12 @@
       <td colspan="1" rowspan="4">
       <div>R-studio</div>
       </td>
+      
       <td>Tarun A H</td>
+      <td colspan="1" rowspan="4" class="text-justify">
+        <p>R is a language and environment for numerical and statistical computing and graphics. The participants have enabled calls to about 34 functions of R from Scilab. Some of the functions include operations such as calculating binomial distribution, quantile function of normal distribution, random poisson distribution, etc.</p>
+<p>Github link: <a href="https://github.com/Tarun0607/Scilab-R-Toolbox" target="_blank">https://github.com/Tarun0607/Scilab-R-Toolbox</a><br>ATOMS link: <a href="https://atoms.scilab.org/toolboxes/SciR" target="_blank">https://atoms.scilab.org/toolboxes/SciR</a></p>
+      </td>
       </tr>
       <tr>
       <td>Venkat Ragavan</td>
@@ -261,7 +314,11 @@
       <td colspan="1" rowspan="2">
       <div>Open edX (web interface)</div>
       </td>
+     
       <td>Anupama Pradeepan</td>
+       <td colspan="1" rowspan="2" class="text-justify">
+        The Open edX platform provides the massively scalable learning software technology behind edX. The participants have successfully embedded Scilab into an LMS such as Open edX. They have not actually built a Scilab Toolbox. They aim towards providing seamless access to Scilab for educators who use CMSs and LMSs for teaching.
+      </td>
       </tr>
       <tr>
       <td>Ramaseshan S</td>
